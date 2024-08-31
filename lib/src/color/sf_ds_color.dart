@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
 
-class PopDSColors {
-  static final PopDSColors _instance = PopDSColors._internal();
+class SFDSColors {
+  static final SFDSColors _instance = SFDSColors._internal();
 
-  factory PopDSColors() {
+  factory SFDSColors() {
     return _instance;
   }
 
-  PopDSColors._internal();
-
-  static MaterialColor primary = generatedColor([0xFF8094B6]);
-  static MaterialColor primaryVariant = generatedColor([0xFF8094B6]);
-  static MaterialColor secundary = generatedColor([0xFF8FA9C7]);
-  static MaterialColor terciary = generatedColor([0xFF717A99]);
-  static MaterialColor backgroundLight = generatedColor([0xFF717A99]);
-  static MaterialColor backgroundDark = generatedColor([0xFF717A99]);
-  static MaterialColor neutrals = generatedColor([0xFF717172]);
+  SFDSColors._internal();
+  // Azul Cinza
+  static MaterialColor primary = generatedColor([0xFF607D8B]);
+  // Azul Cinza Escuro
+  static MaterialColor primaryVariant = generatedColor([0xFF455A64]);
+  // Cinza Claro
+  static MaterialColor secundary = generatedColor([0xFFB0BEC5]);
+  // Cinza Azul
+  static MaterialColor terciary = generatedColor([0xFFCFD8DC]);
+  // Branco Quebrado
+  static MaterialColor backgroundLight = generatedColor([0xFFF5F5F5]);
+  // Cinza Escuro
+  static MaterialColor backgroundDark = generatedColor([0xFF37474F]);
+  // Cinza Médio
+  static MaterialColor neutrals = generatedColor([0xFF90A4AE]);
   static MaterialColor alertSucess = generatedColor([0xFF3CB731]);
-  static MaterialColor alertWarning = generatedColor([0xFFE19E39]);
-  static MaterialColor alertError = generatedColor([0xFFE15D5D]);
+  static MaterialColor alertWarning = generatedColor([0xFFDA8607]);
+  static MaterialColor alertError = generatedColor([0xFFDA1E28]);
 
   static void setColors({
     List<int>? primaryColor,
@@ -76,12 +82,11 @@ class PopDSColors {
   static const Color disabled = Color(0xFF898C91);
   static const Color textButtonDisabledSolidDefault = Color(0xFFA1A3A7);
   static const Color buttonDisabledSolidDefaultBackground = Color(0xFFE7E8E9);
-  static const Color divider = Color(0xFFE7E8E9);
 
   static Color corBackground(BuildContext context) {
     if (MediaQuery.of(context).platformBrightness == Brightness.dark) {
-      return PopDSColors.backgroundLight;
+      return SFDSColors.backgroundLight;
     }
-    return PopDSColors.backgroundDark;
+    return SFDSColors.backgroundDark;
   }
 }
