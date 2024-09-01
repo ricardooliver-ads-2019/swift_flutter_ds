@@ -66,7 +66,7 @@ enum SFDSSpacing {
   giant(96.0),
   ;
 
-  const SFDSSpacing(this.valor);
+  const SFDSSpacing(this.value);
 
-  final double valor;
+  final double value;
 }

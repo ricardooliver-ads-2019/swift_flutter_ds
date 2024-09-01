@@ -9,11 +9,12 @@ class SFDSColors {
 
   SFDSColors._internal();
   // Azul Cinza
-  static MaterialColor primary = generatedColor([0xFF607D8B]);
+  static MaterialColor primary = generatedColor([0xFF000000]);
   // Azul Cinza Escuro
   static MaterialColor primaryVariant = generatedColor([0xFF455A64]);
   // Cinza Claro
-  static MaterialColor secundary = generatedColor([0xFFB0BEC5]);
+  // static MaterialColor secundary = generatedColor([0xFFB0BEC5]);
+  static MaterialColor secundary = generatedColor([0xFF869FAA]);
   // Cinza Azul
   static MaterialColor terciary = generatedColor([0xFFCFD8DC]);
   // Branco Quebrado
@@ -82,6 +83,7 @@ class SFDSColors {
   static const Color disabled = Color(0xFF898C91);
   static const Color textButtonDisabledSolidDefault = Color(0xFFA1A3A7);
   static const Color buttonDisabledSolidDefaultBackground = Color(0xFFE7E8E9);
+  // static const Color buttonDisabledSolidDefaultBackground = Color(0xFF869FAA);
 
   static Color corBackground(BuildContext context) {
     if (MediaQuery.of(context).platformBrightness == Brightness.dark) {
